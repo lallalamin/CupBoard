@@ -1,10 +1,10 @@
 import PantryShelf from "../features/pantry/components/PantryShelf.tsx";
 import "../features/pantry/pantry.css";
-import CanolaOilImg from "../assets/Sauces/CanolaOil.png";
-import FishSauceImg from "../assets/Sauces/FishSauce.png";
-import SeasoningSauceImg from "../assets/Sauces/SeasoningSauce.png";
-import OysterSauceImg from "../assets/Sauces/OysterSauce.png";
-import VegetableOilImg from "../assets/Sauces/VegetableOil.png";
+import CanolaOilImg from "../assets/sauces/CanolaOil.png";
+import FishSauceImg from "../assets/sauces/FishSauce.png";
+import SeasoningSauceImg from "../assets/sauces/SeasoningSauce.png";
+import OysterSauceImg from "../assets/sauces/OysterSauce.png";
+import VegetableOilImg from "../assets/sauces/VegetableOil.png";
 
 function PantryPage() {
   return (
