@@ -1,0 +1,164 @@
+/* =========================
+   PANTRY PAGE
+========================= */
+
+.pantry-page {
+  width: 100%;
+  min-height: 100vh;
+
+  padding: 32px 24px 100px;
+
+  background: #fff9ee;
+  color: #3d3a34;
+}
+
+
+/* Keeps the content from becoming gigantic
+   on desktop screens */
+.pantry-page__header,
+.pantry-page__shelves {
+  width: min(100%, 900px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.pantry-page__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 40px;
+}
+
+.pantry-page__eyebrow {
+  margin: 0 0 4px;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  color: #8c4853;
+}
+
+.pantry-page__header h1 {
+  margin: 0;
+
+  font-size: 36px;
+}
+
+.pantry-page__add-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 52px;
+  height: 52px;
+
+  padding: 0;
+
+  border: 0;
+  border-radius: 50%;
+
+  background: #8c4853;
+  color: white;
+
+  font-size: 28px;
+
+  cursor: pointer;
+}
+
+
+/* =========================
+   SHELF
+========================= */
+
+.pantry-shelf {
+  width: 100%;
+
+  margin-bottom: 42px;
+}
+
+.pantry-shelf__title {
+  margin: 0 0 10px;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+/* This box is exactly the size
+   of the shelf illustration */
+.pantry-shelf__scene {
+  position: relative;
+
+  width: 100%;
+}
+
+
+/* Let the image keep its natural proportions */
+.pantry-shelf__background {
+  width: 100%;
+  height: auto;
+
+  object-fit: contain;
+
+  pointer-events: none;
+}
+
+/* =========================
+   INGREDIENT ROW
+========================= */
+
+.pantry-shelf__items {
+  position: absolute;
+
+  left: 10%;
+  right: 10%;
+
+  /*
+    This places the bottom of the ingredients
+    on the wooden ledge.
+  */
+  bottom: 25%;
+
+  display: flex;
+  align-items: flex-end;
+
+  gap: 2%;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  scrollbar-width: none;
+}
+
+.pantry-shelf__items::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* 5 items visible at a time */
+.pantry-item {
+  flex: 0 0 calc((100% - 8%) / 5);
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.pantry-item__image {
+  width: 120px;
+  height: 150px;
+
+  object-fit: contain;
+
+  display: block;
+}
