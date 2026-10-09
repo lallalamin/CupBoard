@@ -4,9 +4,9 @@
 
 .pantry-page {
   width: 100%;
-  min-height: 100vh;
+  min-height: 100dvh;
 
-  padding: 32px 24px 100px;
+  padding: 24px 18px 100px;
 
   background: #fff9ee;
   color: #3d3a34;
@@ -122,11 +122,6 @@
 
   left: 10%;
   right: 10%;
-
-  /*
-    This places the bottom of the ingredients
-    on the wooden ledge.
-  */
   bottom: 25%;
 
   display: flex;
@@ -137,6 +132,13 @@
   overflow-x: auto;
   overflow-y: hidden;
 
+  /* Makes touch scrolling feel natural on phone */
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-x;
+
+  /* Optional but makes the bottles settle nicely */
+  scroll-snap-type: x proximity;
+
   scrollbar-width: none;
 }
 
@@ -144,19 +146,24 @@
   display: none;
 }
 
-
-/* 5 items visible at a time */
+/* Exactly 5 bottle slots visible */
 .pantry-item {
   flex: 0 0 calc((100% - 8%) / 5);
+
+  min-width: calc((100% - 8%) / 5);
 
   display: flex;
   justify-content: center;
   align-items: flex-end;
+
+  scroll-snap-align: start;
 }
 
 .pantry-item__image {
-  width: 120px;
-  height: 150px;
+  width: 100%;
+  height: auto;
+
+  max-height: 150px;
 
   object-fit: contain;
 

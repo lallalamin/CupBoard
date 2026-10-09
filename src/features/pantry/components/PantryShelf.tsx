@@ -30,6 +30,9 @@ function PantryShelf({ title, items }: PantryShelfProps) {
                 alt={item.name}
                 className="pantry-item__image"
               />
+              {/* <span className="pantry-item__name">
+                {item.name}
+              </span> */}
             </div>
           ))}
         </div>

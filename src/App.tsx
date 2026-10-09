@@ -5,6 +5,7 @@ import MealPlanPage from "./pages/MealPlanPage";
 import PantryPage from "./pages/PantryPage";
 import RecipePage from "./pages/RecipePage";
 import RecipesPage from "./pages/RecipesPage";
+import GroceryPage from "./pages/GroceryPage";
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
         <Route path="/recipes/:recipeId" element={<RecipePage />} />
 
         <Route path="/meal-plan" element={<MealPlanPage />} />
+        
+        <Route path="/grocery" element={<GroceryPage />} />
       </Routes>
     </BrowserRouter>
   );
