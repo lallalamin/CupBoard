@@ -34,21 +34,6 @@
   text-decoration: none;
 }
 
-.bottom-nav__icon {
-  font-size: 20px;
-  line-height: 1;
-}
-
-.bottom-nav__label {
-  width: 100%;
-
-  font-size: 10px;
-  font-weight: 600;
-
-  text-align: center;
-  white-space: nowrap;
-}
-
 .bottom-nav__item.active {
   color: #8c4853;
 }

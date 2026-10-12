@@ -1,4 +1,7 @@
 import { NavLink } from "react-router-dom";
+import {
+  House,BookOpen,CalendarDays,ShoppingBasket,PackageOpen,
+} from "lucide-react";
 import "./BottomNav.css";
 
 function BottomNav() {
@@ -11,8 +14,7 @@ function BottomNav() {
           isActive ? "bottom-nav__item active" : "bottom-nav__item"
         }
       >
-        <span className="bottom-nav__icon">⌂</span>
-        <span className="bottom-nav__label">Home</span>
+        <House size={26} strokeWidth={1.8} />
       </NavLink>
 
       <NavLink
@@ -21,8 +23,7 @@ function BottomNav() {
           isActive ? "bottom-nav__item active" : "bottom-nav__item"
         }
       >
-        <span className="bottom-nav__icon">▤</span>
-        <span className="bottom-nav__label">Recipes</span>
+        <BookOpen size={26} strokeWidth={1.8} />
       </NavLink>
 
       <NavLink
@@ -31,8 +32,7 @@ function BottomNav() {
           isActive ? "bottom-nav__item active" : "bottom-nav__item"
         }
       >
-        <span className="bottom-nav__icon">□</span>
-        <span className="bottom-nav__label">Plan</span>
+        <CalendarDays size={26} strokeWidth={1.8} />
       </NavLink>
 
       <NavLink
@@ -41,8 +41,7 @@ function BottomNav() {
           isActive ? "bottom-nav__item active" : "bottom-nav__item"
         }
       >
-        <span className="bottom-nav__icon">⌑</span>
-        <span className="bottom-nav__label">Grocery</span>
+        <ShoppingBasket size={26} strokeWidth={1.8} />
       </NavLink>
 
       <NavLink
@@ -51,8 +50,7 @@ function BottomNav() {
           isActive ? "bottom-nav__item active" : "bottom-nav__item"
         }
       >
-        <span className="bottom-nav__icon">▥</span>
-        <span className="bottom-nav__label">Pantry</span>
+        <PackageOpen size={26} strokeWidth={1.8} />
       </NavLink>
     </nav>
   );
