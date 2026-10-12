@@ -1,0 +1,322 @@
+.home-page {
+  width: 100%;
+  min-height: 100%;
+
+  padding: 24px 18px 28px;
+
+  background: #fff9ee;
+  color: #3d3a34;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.home-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 16px;
+
+  margin-bottom: 20px;
+}
+
+.home-header__greeting {
+  margin: 0 0 4px;
+
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.home-header__subtitle {
+  margin: 0;
+
+  font-size: 13px;
+
+  color: #80766c;
+}
+
+.home-header__mascot {
+  font-size: 42px;
+  line-height: 1;
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.home-search {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  width: 100%;
+
+  padding: 12px 14px;
+
+  margin-bottom: 26px;
+
+  border: 1px solid #e8ddcd;
+  border-radius: 14px;
+
+  background: #fffdf8;
+
+  color: #8f8477;
+}
+
+.home-search input {
+  width: 100%;
+
+  padding: 0;
+
+  border: 0;
+  outline: 0;
+
+  background: transparent;
+
+  color: #3d3a34;
+
+  font-size: 13px;
+}
+
+.home-search input::placeholder {
+  color: #aaa095;
+}
+
+
+/* =========================
+   GENERAL SECTION
+========================= */
+
+.home-section {
+  margin-bottom: 28px;
+}
+
+.home-section__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 11px;
+}
+
+.home-section__title {
+  margin: 0;
+
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.home-section__link {
+  display: flex;
+  align-items: center;
+
+  gap: 2px;
+
+  color: #8b8176;
+
+  text-decoration: none;
+
+  font-size: 11px;
+}
+
+
+/* =========================
+   QUICK ACTIONS
+========================= */
+
+.quick-actions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 10px;
+}
+
+.quick-action {
+  min-height: 90px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  padding: 12px;
+
+  border-radius: 16px;
+
+  color: #3d3a34;
+
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.quick-action--recipe {
+  background: #f4e3c9;
+}
+
+.quick-action--meal {
+  background: #efd6cf;
+}
+
+.quick-action--grocery {
+  background: #dde8da;
+}
+
+.quick-action--pantry {
+  background: #eee1c9;
+}
+
+.quick-action__icon {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quick-action__plus {
+  position: absolute;
+
+  right: -8px;
+  bottom: -4px;
+}
+
+
+/* =========================
+   RECENT RECIPES
+========================= */
+
+.recent-recipes {
+  overflow: hidden;
+
+  border: 1px solid #eadfce;
+  border-radius: 15px;
+
+  background: #fffdf8;
+}
+
+.recent-recipe {
+  display: grid;
+  grid-template-columns: 46px 1fr auto;
+  align-items: center;
+
+  gap: 10px;
+
+  min-height: 65px;
+
+  padding: 9px 12px;
+
+  border-bottom: 1px solid #eee4d7;
+
+  color: #3d3a34;
+
+  text-decoration: none;
+}
+
+.recent-recipe:last-child {
+  border-bottom: 0;
+}
+
+.recent-recipe__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+
+  border-radius: 12px;
+
+  background: #f4eadb;
+
+  font-size: 23px;
+}
+
+.recent-recipe__name {
+  margin: 0 0 2px;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.recent-recipe__meta {
+  margin: 0;
+
+  color: #958a7e;
+
+  font-size: 10px;
+}
+
+.recent-recipe__chevron {
+  color: #9a9084;
+}
+
+
+/* =========================
+   THIS WEEK
+========================= */
+
+.weekly-meals {
+  overflow: hidden;
+
+  border: 1px solid #eadfce;
+  border-radius: 15px;
+
+  background: #fffdf8;
+}
+
+.weekly-meal {
+  display: grid;
+  grid-template-columns: 34px 38px 1fr auto;
+  align-items: center;
+
+  gap: 8px;
+
+  min-height: 57px;
+
+  padding: 8px 12px;
+
+  border-bottom: 1px solid #eee4d7;
+
+  color: #3d3a34;
+
+  text-decoration: none;
+}
+
+.weekly-meal:last-child {
+  border-bottom: 0;
+}
+
+.weekly-meal__day {
+  color: #776e64;
+
+  font-size: 11px;
+}
+
+.weekly-meal__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 36px;
+  height: 36px;
+
+  border-radius: 50%;
+
+  background: #f4eadb;
+
+  font-size: 19px;
+}
+
+.weekly-meal__name {
+  font-size: 12px;
+  font-weight: 500;
+}
