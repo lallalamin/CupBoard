@@ -6,8 +6,6 @@ import SeasoningSauceImg from "../assets/sauces/SeasoningSauce.png";
 import OysterSauceImg from "../assets/sauces/OysterSauce.png";
 import VegetableOilImg from "../assets/sauces/VegetableOil.png";
 
-import BottomNav from "../components/BottomNav";
-
 function PantryPage() {
   return (
     <>
@@ -59,7 +57,6 @@ function PantryPage() {
               />
         </div>
       </main>
-      <BottomNav />
     </>
   );
 }

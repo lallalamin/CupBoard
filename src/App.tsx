@@ -1,5 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import AppLayout from "./components/AppLayout";
+
 import HomePage from "./pages/HomePage";
 import MealPlanPage from "./pages/MealPlanPage";
 import PantryPage from "./pages/PantryPage";
@@ -11,17 +13,14 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<HomePage />} />
-
-        <Route path="/pantry" element={<PantryPage />} />
-
-        <Route path="/recipes" element={<RecipesPage />} />
-
-        <Route path="/recipes/:recipeId" element={<RecipePage />} />
-
-        <Route path="/meal-plan" element={<MealPlanPage />} />
-        
-        <Route path="/grocery" element={<GroceryPage />} />
+        <Route element={<AppLayout />}>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/pantry" element={<PantryPage />} />
+          <Route path="/recipes" element={<RecipesPage />} />
+          <Route path="/recipes/:recipeId" element={<RecipePage />} />
+          <Route path="/meal-plan" element={<MealPlanPage />} />
+          <Route path="/grocery" element={<GroceryPage />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );
