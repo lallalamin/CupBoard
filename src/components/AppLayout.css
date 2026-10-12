@@ -4,5 +4,7 @@
 
 .app-layout__content {
   min-height: 100dvh;
-  padding-bottom: 80px;
+
+  padding-bottom:
+    calc(90px + env(safe-area-inset-bottom));
 }
