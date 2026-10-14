@@ -56,11 +56,7 @@ const week = [
 function MealPlanPage() {
   return (
     <div className="meal-plan-page">
-      <header className="meal-plan-page__header">
-        <p className="meal-plan-page__eyebrow">
-          MY CUPBOARD
-        </p>
-
+      <header className="recipes-page__header">
         <h1>Meal Plan</h1>
       </header>
 

@@ -12,7 +12,6 @@ function PantryPage() {
       <main className="pantry-page">
         <div className="pantry-page__header">
           <div>
-            <p className="pantry-page__eyebrow">MY CUPBOARD</p>
             <h1>Pantry</h1>
           </div>
 

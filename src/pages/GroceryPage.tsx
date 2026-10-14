@@ -94,14 +94,8 @@ function GroceryPage() {
 
   return (
     <div className="grocery-page">
-      <header className="grocery-page__header">
-        <div>
-          <p className="grocery-page__eyebrow">
-            MY CUPBOARD
-          </p>
-
-          <h1>Grocery List</h1>
-        </div>
+      <header className="recipes-page__header">
+        <h1>Recipes</h1>
       </header>
 
       <div className="grocery-filters">

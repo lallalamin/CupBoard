@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Mali:wght@400;500;600;700&display=swap");
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 *,
 *::before,
 *::after {
@@ -30,4 +34,10 @@ select {
 img {
   display: block;
   max-width: 100%;
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
