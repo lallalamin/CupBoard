@@ -229,3 +229,9 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
+
+@media (hover: hover) and (pointer: fine) {
+  .recipe-card:hover {
+    background: #f5eee2;
+  }
+}
