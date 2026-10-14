@@ -37,7 +37,7 @@ function AppHeader() {
 
       {/* LOGO */}
       <img
-        src="/CupBoardLogo.png"
+        src="/logo.png"
         alt="Cupboard"
         className="app-header__logo-image"
         />

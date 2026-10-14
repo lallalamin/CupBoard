@@ -13,19 +13,19 @@ export default defineConfig({
 
       manifest: {
         name: "Your App Name",
-        short_name: "Kitchen",
+        short_name: "CupBoard",
         display: "standalone",
         background_color: "#FFF9EE",
         theme_color: "#FFF9EE",
 
         icons: [
           {
-            src: "/CupBoardLogo.png",
+            src: "/logo-bg.png",
             sizes: "192x192",
             type: "image/png",
           },
           {
-            src: "/CupBoardLogo.png",
+            src: "/logo-bg.png",
             sizes: "512x512",
             type: "image/png",
           },
