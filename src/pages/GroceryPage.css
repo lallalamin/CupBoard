@@ -1,0 +1,207 @@
+.grocery-page {
+  width: 100%;
+  min-height: 100%;
+
+  padding: 24px 18px 28px;
+
+  background: #fff9ee;
+  color: #3d3a34;
+}
+
+
+/* HEADER */
+
+.grocery-page__header {
+  margin-bottom: 18px;
+}
+
+.grocery-page__eyebrow {
+  margin: 0 0 4px;
+
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+
+  color: #8c4853;
+}
+
+.grocery-page__header h1 {
+  margin: 0;
+
+  font-size: 34px;
+  font-weight: 600;
+}
+
+
+/* FILTERS */
+
+.grocery-filters {
+  display: flex;
+
+  gap: 8px;
+
+  overflow-x: auto;
+
+  margin-bottom: 24px;
+
+  scrollbar-width: none;
+}
+
+.grocery-filters::-webkit-scrollbar {
+  display: none;
+}
+
+.grocery-filter {
+  flex: 0 0 auto;
+
+  padding: 8px 13px;
+
+  border: 1px solid #e4d9c8;
+  border-radius: 999px;
+
+  background: #fffdf8;
+
+  color: #756d64;
+
+  font-size: 12px;
+
+  cursor: pointer;
+}
+
+.grocery-filter.active {
+  background: #718266;
+  border-color: #718266;
+
+  color: #fff;
+}
+
+
+/* SECTIONS */
+
+.grocery-section {
+  margin-bottom: 24px;
+}
+
+.grocery-section h2 {
+  margin: 0 0 9px;
+
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+/* ITEM LIST */
+
+.grocery-section__items {
+  overflow: hidden;
+
+  border: 1px solid #eadfce;
+  border-radius: 16px;
+
+  background: #fffdf8;
+}
+
+.grocery-item {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 22px 38px 1fr auto;
+  align-items: center;
+
+  gap: 9px;
+
+  min-height: 58px;
+
+  padding: 8px 12px;
+
+  border: 0;
+  border-bottom: 1px solid #eee4d7;
+
+  background: transparent;
+
+  color: #3d3a34;
+
+  text-align: left;
+
+  cursor: pointer;
+}
+
+.grocery-item:last-child {
+  border-bottom: 0;
+}
+
+
+/* CHECKBOX */
+
+.grocery-item__checkbox {
+  width: 18px;
+  height: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1.5px solid #aaa095;
+  border-radius: 5px;
+
+  color: white;
+
+  font-size: 11px;
+}
+
+.grocery-item--bought .grocery-item__checkbox {
+  background: #718266;
+  border-color: #718266;
+}
+
+
+/* INGREDIENT IMAGE */
+
+.grocery-item__image-wrap {
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grocery-item__image {
+  max-width: 34px;
+  max-height: 34px;
+
+  object-fit: contain;
+}
+
+
+/* TEXT */
+
+.grocery-item__name {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+
+/* BOUGHT STATE */
+
+.grocery-item--bought {
+  opacity: 0.55;
+}
+
+.grocery-item--bought .grocery-item__name {
+  text-decoration: line-through;
+}
+
+.grocery-section--have {
+  margin-top: 30px;
+}
+
+.grocery-item--have {
+  opacity: 0.65;
+}
+
+.grocery-item__checkbox--checked {
+  background: #718266;
+  border-color: #718266;
+  color: white;
+}
