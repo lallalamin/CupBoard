@@ -180,6 +180,7 @@
 
 .recipe-card__content {
   padding: 10px 10px 12px;
+  background: #fffdf8;
 }
 
 .recipe-card__content h2 {
@@ -227,11 +228,5 @@
 @media (min-width: 700px) {
   .recipe-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-}
-
-@media (hover: hover) and (pointer: fine) {
-  .recipe-card:hover {
-    background: #f5eee2;
   }
 }

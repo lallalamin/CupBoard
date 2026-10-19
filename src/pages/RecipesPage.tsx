@@ -6,6 +6,7 @@ import CrepeCake from "../assets/recipes/CrepeCake.jpg";
 import PadKraPao from "../assets/recipes/PadKaprao.jpg";
 import Hamburger from "../assets/recipes/Hamburger.jpg";
 import ToffeeCake from "../assets/recipes/ToffeeCake.jpg";
+import Cookie from "../assets/recipes/Cookie.jpg";
 import Palo from "../assets/recipes/Palo.jpg";
 
 import "./RecipesPage.css";
@@ -48,7 +49,7 @@ const recipes = [
     image: Hamburger,
   },
   {
-    id: 5,
+    id: 6,
     name: "Toffee Cake",
     cuisine: "Dessert",
     time: "60 min",
@@ -56,11 +57,18 @@ const recipes = [
     isNew: true,
   },
   {
-    id: 5,
+    id: 7,
     name: "Palo",
     cuisine: "Thai",
     time: "60 min",
     image: Palo,
+  },
+  {
+    id: 7,
+    name: "ChocoChip Cookie",
+    cuisine: "Dessert",
+    time: "30 min",
+    image: Cookie,
   },
 ];
 
